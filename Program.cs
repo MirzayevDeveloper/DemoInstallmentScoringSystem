@@ -7,7 +7,7 @@ namespace Installment
     {
         public static void Main(string[] args)
         {
-            //Register();
+            // Register();  // O'zimiz uchun bazaga data  qo'shgani!
 
             Console.Write("Enter your PassportID: ");
             string id = Console.ReadLine() ?? string.Empty;

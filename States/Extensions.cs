@@ -87,7 +87,7 @@ namespace Installment.States
                 if (totalScore >= 50)
                 {
                     var taxpayer = GetTaxpayer(PassportId);
-                    Console.WriteLine($"You can take {taxpayer.Income * 20 * totalScore / 100} sum of money");
+                    Console.WriteLine($"You can take {taxpayer.Income * 20 * totalScore / 100} $ of money");
                 }
                 else
                     Console.WriteLine("Sorry you cannot use our system!!!");
@@ -113,6 +113,5 @@ namespace Installment.States
             File.WriteAllText(path+"\\FederalInfo.json",JsonConvert.SerializeObject(list2, Formatting.Indented));
             File.WriteAllText(path+"\\Taxpayer.json",JsonConvert.SerializeObject(list3, Formatting.Indented));
         }
-
     }
 }
